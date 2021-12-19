@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.content h1 {
+    margin-top: 6%;
+    margin-left: 10%;
+    text-align: left;
+    color: gray;
+}
+
+.content p {
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: left;
+    color: gray;
+}
+
+form {
+    margin-top: 8%;
+    text-align: center;
+}
+
+input, textarea {
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+img {
+    margin-left: 10%;
+    max-width: 100rem;
+    margin-top: 1%;
+}
+
+
+html, body {
+    height: 100%;
+}
+
+header {
+    background: linear-gradient(90deg, rgb(19, 19, 240), rgb(162, 167, 231));
+}
+
+
+header .container {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 2.1rem;
+    padding: 6px 8px;
+    margin-left: 40px;
+}
+
+nav ul li a:hover{
+    background-color: gray;
+    transition: 0.1s;
+    border-radius: 12px;
+}
+
+@media (max-width: 964px) {
+    html{
+        font-size: 50%;
+    }
+}
+
+@media(max-width: 809px){
+    html{
+        font-size: 40%;
+    }
+
+    img {
+        margin-left: 10%;
+        max-width: 70rem;
+        margin-top: 3%;
+    }
+}
+
+@media(max-width: 1000px){
+
+    nav {
+        display: none;
+    }
+
+    img {
+        margin-left: 10%;
+        max-width: 40rem;
+        margin-top: 3%;
+    }
+
+    .one, .two, .three {
+        background-color: black;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+        transition-duration: 0.5s;
+    }
+
+    .menu {
+        width: 40px;
+        height: 30px;
+    }
+
+    .menu-section.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(150deg, rgb(19, 19, 240), rgb(162, 167, 231));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .menu-section.on nav {
+        display: block;
+    }
+
+    .menu-section.on .menu {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+
+    .menu-section.on .menu .one{
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .menu-section.on .menu .two{
+        opacity: 0;
+    }
+
+    .menu-section.on .menu .three{
+        transform: rotate(-45deg) translate(9px, -9px);
+    }
+
+    .menu-section.on nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    .menu-section.on nav ul li a {
+        transition-duration: 0.5s;
+        font-size: 5rem;
+        line-height: 15rem;
+        margin-left: 0;
+    }
+}

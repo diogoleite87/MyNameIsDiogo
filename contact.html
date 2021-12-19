@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyNameIsDiogo</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container">
+
+            <div class="logo">
+                <h1>MyNameIsDiogo</h1>
+            </div>
+
+            <div class="menu-section">
+
+                <div class="menu">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="about.html">Sobre</a></li>
+                        <li><a href="project.html">Projetos</a></li>
+                        <li><a href="news.html">Notícias</a></li>
+                        <li><a href="contact.html">Contato</a></li>
+                    </ul>
+                </nav>
+                
+            </div>
+
+        </div>
+
+    </header>
+
+    <div class="content">
+        <p>Deixe sua mensagem e email para contanto.</p>
+        <form method="post" action="envia_mensagem" >
+            <input type="text" name="nome" placeholder="Nome Completo" required><br></br>
+            <input type="email" name="email" placeholder="E-Mail contato" required><br></br>
+            <input type="text" name="assunto" placeholder="Assunto" required><br></br>
+            <textarea name="mensagem" id="" cols="30" rows="5" placeholder="Mensagem"></textarea><br></br>
+            <input type="submit" value="Enviar" onclick="return validarFormulario">
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
