@@ -1,3 +1,3 @@
 # Site
 
-> Website study using HTML, CSS and Javascript.
+> Website study using HTML, CSS and JavaScript.
